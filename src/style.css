@@ -1,0 +1,376 @@
+                    /*Google Fonts*/
+                    
+                    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@300;1,400;1,500;1,600;1,700;1&display=swap');
+                    * {
+                        font-family: 'Poppins', sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        scroll-padding-top: 1rem;
+                        scroll-behavior: smooth;
+                        list-style: none;
+                        text-decoration: none;
+                        box-sizing: border-box;
+                    }
+                    /* Variables*/
+                    
+                     :root {
+                        --main-color: #252525, #202020, #131313;
+                        --text-color: #FFFFFF, #EDEDED, #F2F2F2, #FAFAFA;
+                        --bg-color: #F9ED32, #FFF225;
+                    }
+                    
+                    section {
+                        padding: 4rem 0 2rem;
+                    }
+                    
+                    h2 {
+                        text-align: center;
+                    }
+                    
+                    img {
+                        width: 100%;
+                    }
+                    
+                    body {
+                        color: var(--text-color);
+                        font-family: Arial, sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        background-color: #f4f4f4;
+                    }
+                    
+                    .container {
+                        max-width: 1068;
+                        margin-left: auto;
+                        margin-right: auto;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    
+                    header {
+                        display: block;
+                        width: 100%;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        z-index: 100;
+                    }
+                    
+                    .nav {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 20px 35px;
+                    }
+                    
+                    #menu-icon {
+                        font-size: 24px;
+                        cursor: pointer;
+                        color: var (--text-color);
+                        display: none;
+                    }
+                    
+                    .logo {
+                        font-size: 1.2 rem;
+                        font-weight: 300;
+                        color: var (--text-color);
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 24px;
+                        font-weight: 700;
+                        color: #333;
+                        text-decoration: none;
+                        display: inline-block;
+                    }
+                    
+                    .logo-image {
+                        width: 90px;
+                        /* Adjust the size as needed */
+                        height: 90px;
+                        margin-right: 15px;
+                        /* Space between the logo and the text */
+                    }
+                    
+                    .logo {
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 36px;
+                        /* Bigger font size for the heading */
+                        font-weight: 700;
+                        color: #333;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        /* Make the text uppercase */
+                        letter-spacing: 2px;
+                        /* Add spacing between letters */
+                    }
+                    
+                    .logo span {
+                        color: #ff6347;
+                        /* Change the color of "EV" */
+                    }
+                    
+                    .logo:hover {
+                        color: #ff6347;
+                        /* Change the color on hover */
+                    }
+                    
+                    .logo span:hover {
+                        color: #333;
+                        /* Change the color of "EV" on hover */
+                    }
+                    
+                    .navbar {
+                        display: flex;
+                        column-gap: 2rem;
+                    }
+                    
+                    .navbar a {
+                        color: var (--text-color);
+                        font-size: 1rem;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                    }
+                    
+                    .navbar a:hover,
+                    .navbar .active {
+                        color: var (--main-color);
+                        border-bottom: 3px solid var(--main-color);
+                    }
+                    
+                    #search-icon {
+                        font-size: 24p x;
+                        cursor: pointer;
+                    }
+                    
+                    .search-box {
+                        position: absolute;
+                        top: 110%;
+                        right: 0;
+                        left: 0;
+                        background: var(--bg-color);
+                        box-shadow: 4px 4px 20px rgb(15 54 55/10%);
+                        border: 1 px solid var(--main-color);
+                        border-radius: 0.5rem;
+                    }
+                    
+                    .search-box input {
+                        width: 100%;
+                        padding: 20px;
+                        border: none;
+                        outline: none;
+                        background: 1rem;
+                        clip-path: circle(0% at 100% 0%);
+                    }
+                    
+                    .search-box active {
+                        clip-path: circle(144% at 100% 0%);
+                        transition: 0.4s;
+                    }
+                    
+                    social-icons {
+                        display: flex;
+                        gap: 10px;
+                    }
+                    
+                    .social-icons a {
+                        text-decoration: none;
+                        color: #000;
+                        /* Default color */
+                    }
+                    
+                    .social-icons a:hover {
+                        color: #0077b5;
+                        /* LinkedIn color on hover */
+                    }
+                    
+                    .social-icons i {
+                        font-size: 24px;
+                        /* Icon size */
+                    }
+                    
+                    .header {
+                        text-align: center;
+                        padding: 50px;
+                        background-color: #333;
+                        color: white;
+                    }
+                    
+                    .vehicles {
+                        display: flex;
+                        justify-content: space-around;
+                        margin: 20px 0;
+                    }
+                    
+                    .vehicle {
+                        text-align: center;
+                    }
+                    
+                    .vehicle img {
+                        width: 100%;
+                        max-width: 300px;
+                        border-radius: 10px;
+                    }
+                    
+                    .vehicle button {
+                        margin-top: 10px;
+                        padding: 10px 20px;
+                        background-color: #ff6347;
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        font-size: 16px;
+                    }
+                    
+                    .carousel {
+                        margin: 40px auto;
+                        max-width: 800px;
+                        text-align: center;
+                    }
+                    
+                    .carousel-item {
+                        display: none;
+                        font-size: 24px;
+                        padding: 20px;
+                        background-color: #ddd;
+                        border-radius: 10px;
+                    }
+                    
+                    .carousel-item.active {
+                        display: block;
+                    }
+                    
+                    .prebook-button {
+                        position: flex;
+                        bottom: 20px;
+                        right: 20px;
+                        padding: 15px 25px;
+                        background-color: #ff6347;
+                        color: white;
+                        border: none;
+                        border-radius: 50px;
+                        font-size: 18px;
+                        cursor: pointer;
+                        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                    }
+                    /* General Styles */
+                    
+                    body {
+                        font-family: 'Poppins', sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        background-color: #f4f4f4;
+                    }
+                    /* Footer Styles */
+                    
+                    .footer {
+                        background-color: #333;
+                        color: white;
+                        padding: 20px 0;
+                        text-align: left;
+                    }
+                    
+                    .footer .container {
+                        max-width: 1200px;
+                        margin: 0 auto;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        align-items: center;
+                    }
+                    
+                    .footer-links {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        gap: 18px;
+                        margin-bottom: 10px;
+                    }
+                    
+                    .footer-links a {
+                        color: white;
+                        text-decoration: none;
+                        font-size: 14px;
+                    }
+                    
+                    .footer-links a:hover {
+                        text-decoration: underline;
+                    }
+                    
+                    .footer-social {
+                        display: flex;
+                        justify-content: center;
+                        gap: 15px;
+                    }
+                    
+                    .footer-social a img {
+                        width: 24px;
+                        height: 24px;
+                        transition: transform 0.3s ease;
+                    }
+                    
+                    .footer-social a img:hover {
+                        transform: scale(1.1);
+                    }
+                    
+                    @media (max-width: 768px) {
+                        .footer .container {
+                            flex-direction: column;
+                            text-align: center;
+                        }
+                    }
+                    
+                    body {
+                        font-family: 'Poppins', sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        background-color: #f4f4f4;
+                    }
+                    
+                    .contact-section {
+                        text-align: center;
+                        padding: 50px;
+                        background-color: #fff;
+                        margin: 50px auto;
+                        max-width: 600px;
+                        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+                        border-radius: 10px;
+                    }
+                    
+                    .contact-section h1 {
+                        font-size: 36px;
+                        margin-bottom: 20px;
+                        color: #333;
+                    }
+                    
+                    button {
+                        padding: 10px 20px;
+                        font-size: 18px;
+                        color: #fff;
+                        background-color: #ff6347;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+                    
+                    button:hover {
+                        background-color: #e5533d;
+                    }
+                    
+                    .contact-info {
+                        margin-top: 20px;
+                        text-align: left;
+                    }
+                    
+                    .contact-info p {
+                        font-size: 18px;
+                        color: #333;
+                    }
+                    
+                    .contact-info a {
+                        color: #ff6347;
+                        text-decoration: none;
+                    }
+                    
+                    .contact-info a:hover {
+                        text-decoration: underline;
+                    }

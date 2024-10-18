@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Rhyno EV</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #000;
+        /* Font color set to black */
+        background-color: #f4f4f4;
+      }
+
+      .about-section {
+        background-image: url("your-hero-image.jpg");
+        /* Replace with your image */
+        background-size: cover;
+        background-position: center;
+        padding: 100px 50px;
+        text-align: center;
+      }
+
+      .about-section h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        color: #ff6b35;
+        /* Heading color */
+        animation: fadeInDown 1s ease-in-out;
+      }
+
+      .about-section p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        animation: fadeInUp 1.5s ease-in-out;
+      }
+
+      .highlight {
+        color: #ff6b35;
+        font-weight: bold;
+      }
+
+      @keyframes fadeInDown {
+        0% {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .about-section {
+          padding: 50px 20px;
+        }
+        .about-section h1 {
+          font-size: 2.5rem;
+        }
+        .about-section p {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="about-section">
+      <h1>About Us</h1>
+      <p>
+        Established in 2019 by an automotive engineer with a vision for
+        sustainable and robust mobility solutions, Rhyno EV is not just a
+        company; it's a collective effort of a dynamic team of young individuals
+        passionately driving innovation in the electric vehicle industry. We
+        believe in
+        <span class="highlight">engineering solutions that solve problems</span
+        >.
+      </p>
+      <p>
+        With our first product, we've taken a bold step to create something more
+        than just a vehicle; it's a unique experience of elegance, comfort, and
+        style, addressing the pitfalls of conventional electric scooters. Our
+        design prioritizes
+        <span class="highlight">safety</span>, eliminating concerns of fires and
+        ensuring a longer battery lifespan with our battery technology.
+        Perfectly suited for fleet operators, especially in tourist-centric
+        locations like Goa, our rugged yet aesthetically appealing scooters are
+        engineered for longevity and reliability. Join us as we pioneer a new
+        era in <span class="highlight">sustainable</span> and
+        <span class="highlight">dependable electric transportation</span>.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rhyno EV - SE03 Max</title>
+    <style>
+      /* Same styling as SE03 Lite */
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .vehicle-image {
+        text-align: center;
+      }
+
+      .vehicle-image img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+      }
+
+      .color-selection {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .color-button {
+        padding: 10px 20px;
+        margin: 0 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .details {
+        text-align: center;
+        margin: 20px 0;
+        font-size: 20px;
+      }
+
+      .buy-button {
+        display: block;
+        margin: 20px auto;
+        padding: 15px 30px;
+        background-color: #ff6347;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="vehicle-image">
+        <img src="se03max.png.png" alt="SE03 Max" />
+      </div>
+
+      <div class="color-selection">
+        <button class="color-button" style="background-color: #000">
+          Black
+        </button>
+        <button
+          class="color-button"
+          style="background-color: #fff; color: #000"
+        >
+          White
+        </button>
+        <button class="color-button" style="background-color: #ff6347">
+          Red
+        </button>
+        <button class="color-button" style="background-color: #0000ff">
+          Blue
+        </button>
+        <button class="color-button" style="background-color: #008000">
+          Green
+        </button>
+      </div>
+
+      <div class="details">
+        <h2>Rhyno SE03 Max</h2>
+        <p>
+          The Rhyno SE03 Max is the ultimate in electric vehicle performance.
+          With enhanced power, extended range, and luxurious features, it’s
+          designed for those who want the best of everything.
+        </p>
+      </div>
+
+      <button class="buy-button" onclick="location.href='checkout.html'">
+        Buy Now
+      </button>
+    </div>
+  </body>
+</html>

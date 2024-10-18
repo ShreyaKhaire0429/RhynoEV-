@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Rhyno EV</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #000;
+        /* Font color set to black */
+        background-color: #f4f4f4;
+      }
+
+      .contact-section {
+        padding: 100px 50px;
+        text-align: center;
+      }
+
+      .contact-section h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        color: #ff6b35;
+        /* Heading color */
+        animation: fadeInDown 1s ease-in-out;
+      }
+
+      .contact-info p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        animation: fadeInUp 1.5s ease-in-out;
+      }
+
+      .contact-info a {
+        color: #ff6b35;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      #contactButton {
+        background-color: #ff6b35;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        animation: fadeInUp 1s ease-in-out;
+      }
+
+      #contactButton:hover {
+        background-color: #e55a2e;
+      }
+
+      @keyframes fadeInDown {
+        0% {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .contact-section {
+          padding: 50px 20px;
+        }
+        .contact-section h1 {
+          font-size: 2.5rem;
+        }
+        .contact-info p {
+          font-size: 1rem;
+        }
+        #contactButton {
+          font-size: 0.9rem;
+          padding: 8px 16px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="contact-section">
+      <h1>Contact Us</h1>
+      <button id="contactButton">Show Contact Info</button>
+
+      <div id="contactInfo" class="contact-info" style="display: none">
+        <p>
+          <strong>Mail:</strong>
+          <a href="mailto:info@rhyno.in">info@rhyno.in</a>
+        </p>
+        <p>
+          <strong>Mobile no.:</strong>
+          <a href="tel:+919023987528">+91-9023987528</a>
+        </p>
+        <p>
+          <strong>Location:</strong> Rhyno Wheels Private Limited, Near UG
+          hostel gate #2, Behind PDEU, Raisan, Gandhinagar, Gujarat, India.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("contactButton").onclick = function () {
+        const contactInfo = document.getElementById("contactInfo");
+        if (contactInfo.style.display === "none") {
+          contactInfo.style.display = "block";
+        } else {
+          contactInfo.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

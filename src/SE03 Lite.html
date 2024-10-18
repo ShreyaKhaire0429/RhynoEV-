@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rhyno EV - SE03 Lite</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: black;
+        /* Set font color to black */
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .vehicle-image {
+        text-align: center;
+      }
+
+      .vehicle-image img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+        animation: fadeIn 1s ease-in-out;
+        /* Animation for images */
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .color-selection {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .color-button {
+        padding: 10px 20px;
+        margin: 0 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .details {
+        text-align: center;
+        margin: 20px 0;
+        font-size: 20px;
+      }
+
+      h2 {
+        text-align: center;
+        color: #ff6b35;
+        /* Set heading color */
+        animation: fadeIn 2s ease-in-out;
+        /* Animation for heading */
+      }
+
+      .buy-button {
+        display: block;
+        margin: 20px auto;
+        padding: 15px 30px;
+        background-color: #ff6347;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      function changeImage(color) {
+        const image = document.getElementById("vehicleImage");
+        switch (color) {
+          case "black":
+            image.src = "https://example.com/se03lite_black.png"; // Replace with the actual image link
+            break;
+          case "white":
+            image.src = "https://example.com/se03lite_white.png"; // Replace with the actual image link
+            break;
+          case "red":
+            image.src = "https://example.com/se03lite_red.png"; // Replace with the actual image link
+            break;
+          default:
+            image.src = "https://example.com/se03lite.png"; // Default image
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="vehicle-image">
+        <img id="vehicleImage" src="se03lite.png.png" alt="SE03 Lite" />
+      </div>
+
+      <div class="color-selection">
+        <button
+          class="color-button"
+          style="background-color: #000; color: #fff"
+          onclick="changeImage('black')"
+        >
+          Black
+        </button>
+        <button
+          class="color-button"
+          style="background-color: #fff; color: #000"
+          onclick="changeImage('white')"
+        >
+          White
+        </button>
+        <button
+          class="color-button"
+          style="background-color: #ff6347"
+          onclick="changeImage('red')"
+        >
+          Red
+        </button>
+      </div>
+
+      <div class="details">
+        <h2>Rhyno SE03 Lite</h2>
+        <p>
+          The Rhyno SE03 Lite is a sleek, efficient, and stylish electric
+          vehicle designed for urban commuters. Lightweight and eco-friendly,
+          it's perfect for those who want a cost-effective and environmentally
+          conscious way to travel.
+        </p>
+      </div>
+
+      <button class="buy-button" onclick="location.href='checkout.html'">
+        Buy Now
+      </button>
+    </div>
+  </body>
+</html>

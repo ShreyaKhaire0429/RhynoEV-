@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rhyno EV - Compare Vehicles</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: black;
+        /* Set font color to black */
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #ff6b35;
+        /* Set heading color */
+        font-family: "Lucida Console", Courier, monospace;
+        /* Stylish font */
+        animation: fadeIn 2s ease-in-out;
+        /* Animation */
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+
+      th,
+      td {
+        padding: 15px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        background-color: #ff6347;
+        color: white;
+        border-radius: 10px 10px 0 0;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      tr:nth-child(odd) {
+        background-color: white;
+      }
+
+      tr:hover {
+        background-color: #f1f1f1;
+      }
+
+      td img {
+        width: 100%;
+        max-width: 200px;
+        border-radius: 10px;
+      }
+
+      .buy-button {
+        display: block;
+        margin: 20px auto;
+        padding: 15px 30px;
+        background-color: #ff6347;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      @media (max-width: 768px) {
+        table,
+        th,
+        td {
+          display: block;
+          width: 100%;
+        }
+        th,
+        td {
+          text-align: center;
+          padding: 10px;
+        }
+        td img {
+          max-width: 100px;
+          margin: 0 auto;
+        }
+        th {
+          border-radius: 10px;
+        }
+        tr {
+          margin-bottom: 10px;
+          border: 1px solid #ddd;
+        }
+        tr:nth-child(even),
+        tr:nth-child(odd) {
+          background-color: white;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Compare Rhyno Vehicles</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>SE03 Lite</th>
+            <th>SE03</th>
+            <th>SE03 Max</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Image</td>
+            <td><img src="se03lite.png.png" alt="SE03 Lite" /></td>
+            <td><img src="se03.png.png" alt="SE03" /></td>
+            <td><img src="se03max.png.png" alt="SE03 Max" /></td>
+          </tr>
+          <tr>
+            <td>Battery</td>
+            <td>1.8Kwh</td>
+            <td>2.7Kwh</td>
+            <td>2.7Kwh</td>
+          </tr>
+          <tr>
+            <td>Battery Features</td>
+            <td>LFP with 1500 cycles, Active Balancing, Waterproof (IP67)</td>
+            <td>LFP with 1500 cycles, Active Balancing, Waterproof (IP67)</td>
+            <td>LFP with 1500 cycles, Active Balancing, Waterproof (IP67)</td>
+          </tr>
+          <tr>
+            <td>Battery Warranty</td>
+            <td>3 years</td>
+            <td>3 years</td>
+            <td>3 years</td>
+          </tr>
+          <tr>
+            <td>Charging Time</td>
+            <td>3 hours (12A)</td>
+            <td>4 hours (12A)</td>
+            <td>4 hours (12A)</td>
+          </tr>
+          <tr>
+            <td>Motor</td>
+            <td>1500W</td>
+            <td>1500W</td>
+            <td>2000W</td>
+          </tr>
+          <tr>
+            <td>Max Speed</td>
+            <td>55 km/h</td>
+            <td>55 km/h</td>
+            <td>65 km/h</td>
+          </tr>
+          <tr>
+            <td>Warranty on Electronics</td>
+            <td>1 year</td>
+            <td>1 year</td>
+            <td>1 year</td>
+          </tr>
+          <tr>
+            <td>Max Range</td>
+            <td>
+              <ul>
+                <li>100 km (@30km/h)</li>
+                <li>90 km (@45km/h)</li>
+                <li>60 km (@full speed)</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>150 km (@30km/h)</li>
+                <li>110 km (@45km/h)</li>
+                <li>90 km (@full speed)</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>120 km (@30km/h)</li>
+                <li>100 km (@45km/h)</li>
+                <li>80 km (@full speed)</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Key Benefits</td>
+            <td>
+              Fire-safe Battery, Range Prediction, Comfortable Ride, Stable and
+              Safe
+            </td>
+            <td>
+              Fire-safe Battery, Range Prediction, Comfortable Ride, Stable and
+              Safe
+            </td>
+            <td>
+              Fire-safe Battery, Range Prediction, Comfortable Ride, Stable and
+              Safe
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <button class="buy-button" onclick="location.href='checkout.html'">
+        Buy Now
+      </button>
+    </div>
+  </body>
+</html>

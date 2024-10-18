@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website design for RHYNO EV</title>
+    <link rel="stylesheet" href="style.css" />
+    <style media="screen">
+        /* General Styles */
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* Navbar Styles */
+        
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px 20px;
+        }
+        
+        .logo {
+            font-size: 45px;
+            color: #333;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar li {
+            margin: 0 15px;
+        }
+        
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+        }
+        /* Home Section */
+        
+        .home {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 20px;
+        }
+        /* Vehicle Styles */
+        
+        .vehicles {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        
+        .vehicle {
+            margin: 0 15px;
+            text-align: center;
+        }
+        /* Carousel Styles */
+        
+        .carousel {
+            margin: 40px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+        }
+        
+        .carousel-item {
+            display: none;
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            padding: 10px 20px;
+            border: 2px solid #ff6b35;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+        
+        .carousel-item.active {
+            display: block;
+        }
+        /* Pre-Book Button */
+        
+        .prebook-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #ff6b35;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .prebook-button:hover {
+            background-color: #e55a2c;
+        }
+        /* Footer Styles */
+        
+        .footer {
+            background-color: #f8f8f8;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .footer-social {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .footer-social img {
+            width: 24px;
+            margin: 0 5px;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            font-family: tahoma;
+        }
+    </style>
+    <!--Box Icons-->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+
+
+
+
+
+    <!--Home-->
+    <section class="home" id="home">
+        <div class="header">
+            <h1>Welcome to Rhyno EV</h1>
+            <p>Your Future of Electric Mobility</p>
+        </div>
+        <div>
+            <h2>
+                “Let's Elevate Your Ride Experience With Rhyno – Where Superiority Meets Style.<br />" (And the last word will keep changing: Elegance, Minimalism, Comfort)
+            </h2>
+        </div>
+        <div>
+
+            <!-- Navbar -->
+            <header>
+                <div class="nav container">
+                    <!-- Menu icon-->
+                    <i class="bx bx-menu" id="menu-icon"></i>
+                    <!-- Logo-->
+                    <a href="#" class="logo">RHYNO<span style="color: #ff6b35">EV</span></a>
+                    <!-- Nav List -->
+                    <ul class="navbar">
+                        <li><a href="index.html" class="active">Home</a></li>
+
+
+                        <li><a href="About.html">About Us</a></li>
+
+                        <li><a href="CompareAll.html">Products</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                        <li><a href="Payment.html">Pre-book Now</a></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <section id="home">
+
+                    </section>
+                </div>
+                <div class="content">
+                    <section id="About Us">
+
+                    </section>
+                </div>
+
+            </header>
+            <script>
+                document.querySelectorAll('a[href^="# "]').forEach(anchor => {
+                    anchor.addEventListener('click', function(e) {
+                        e.preventDefault();
+
+                        document.querySelector(this.getAttribute('href')).scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    });
+                });
+            </script>
+        </div>
+
+        <div class="vehicles ">
+            <div class="vehicle ">
+                <img src="se03lite.png.png " alt="SE03 Lite " />
+                <h3>SE03 Lite</h3>
+                <button onclick="location.href='se03 lite.html' ">Check Out</button>
+            </div>
+            <div class="vehicle ">
+                <img src="se03.png.png " alt="SE03 " />
+                <h3>SE03</h3>
+                <button onclick="location.href='se03.html' ">Check Out</button>
+            </div>
+            <div class="vehicle ">
+                <img src="se03max.png.png " alt="SE03 Max " />
+                <h3>SE03 Max</h3>
+                <button onclick="location.href='se03max.html' ">Check Out</button>
+            </div>
+        </div>
+
+        <div class="carousel ">
+            <div class="carousel-item active ">USP 1: LFP Battery</div>
+            <div class="carousel-item ">USP 2: Wider tyres</div>
+            <div class="carousel-item ">USP 3: Range prediction:</div>
+            <div class="carousel-item ">USP 4: Extraordinary Experience:</div>
+            <div class="carousel-item ">USP 5: Rugged and simple Design:</div>
+        </div>
+        <!--Pre-book-->
+        <button class="prebook-button" onclick="window.location.href='prebook.html'">
+            Pre-Book Now
+        </button>
+
+        <script>
+            document.querySelectorAll('a[href^="# "]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
+
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer ">
+        <div class="container ">
+            <div class="footer-links ">
+                <a href="privacy_policy.html ">Privacy Policy</a>
+                <a href="Refund_policy.html ">Refund Policy</a>
+                <a href="website_policy.html ">Website Policy</a>
+                <a href="Contact.html ">Contact Us</a>
+                <a href="CompareAll.html ">Products</a>
+                <a href="https://www.linkedin.com/company/yourcompany " target="_blank ">Career</a>
+                <a href="rental.html ">Rental</a>
+            </div>
+            <div class="footer">
+
+
+            </div>
+            <!-- JavaScript for smooth transition if needed -->
+            <script>
+                document.querySelectorAll('a.nav-link').forEach(anchor => {
+                    anchor.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const href = this.getAttribute('href');
+
+                        // Optional smooth transition effect (simulated with delay)
+                        setTimeout(() => {
+                            window.location.href = href;
+                        }, 300); // Adjust delay as needed
+                    });
+                });
+            </script>
+            <div class="footer-social ">
+                <a href="https://www.instagram.com/yourcompany " target="_blank ">
+                    <img src="Insta_icon.png " alt="Instagram " />
+                </a>
+                <ahref="https://www.linkedin.com/company/yourcompany " target="_blank ">
+                    <img src="Linkedin_icon.png " alt="LinkedIn " />
+                    </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

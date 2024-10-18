@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Payment Gateway</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        color: #000;
+        /* Font color set to black */
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        animation: fadeIn 1s ease-in-out;
+        /* Fade-in animation for the container */
+      }
+
+      h2.title {
+        font-size: 24px;
+        color: #ff6b35;
+        /* Heading color */
+        margin-bottom: 20px;
+        animation: fadeInDown 1s ease-in-out;
+        /* Fade-in animation for the heading */
+      }
+
+      .input-box {
+        margin-bottom: 15px;
+        animation: fadeInUp 1.5s ease-in-out;
+        /* Fade-in animation for input boxes */
+      }
+
+      .input-box span {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 5px;
+        color: #333;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+
+      .flex {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .flex .input-box {
+        width: 48%;
+      }
+
+      .card-icons {
+        width: 100%;
+        max-width: 200px;
+        margin-top: 10px;
+      }
+
+      .btn {
+        width: 100%;
+        padding: 15px;
+        background-color: #ff6347;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        text-align: center;
+        margin-top: 20px;
+        animation: fadeInUp 2s ease-in-out;
+        /* Fade-in animation for the button */
+      }
+
+      .btn:hover {
+        background-color: #e5533d;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeInDown {
+        0% {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <form action="payment_processing.php" method="POST">
+        <div class="billing-address">
+          <h2 class="title">Billing Address</h2>
+          <div class="input-box">
+            <span>Full Name:</span>
+            <input
+              type="text"
+              name="fullname"
+              placeholder="Shreya Khaire"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <span>Email:</span>
+            <input
+              type="email"
+              name="email"
+              placeholder="example@example.com"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <span>Address:</span>
+            <input
+              type="text"
+              name="address"
+              placeholder="Room - Street - Locality"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <span>City:</span>
+            <input type="text" name="city" placeholder="Berlin" required />
+          </div>
+          <div class="flex">
+            <div class="input-box">
+              <span>State:</span>
+              <input type="text" name="state" placeholder="Germany" required />
+            </div>
+            <div class="input-box">
+              <span>Zip Code:</span>
+              <input type="text" name="zipcode" placeholder="12345" required />
+            </div>
+          </div>
+        </div>
+
+        <div class="payment-details">
+          <h2 class="title">Payment</h2>
+          <div class="input-box">
+            <span>Cards Accepted:</span>
+            <img
+              src="Payicon.jpg.jpg"
+              alt="Cards Accepted"
+              class="card-icons"
+            />
+          </div>
+          <div class="input-box">
+            <span>Name on Card:</span>
+            <input
+              type="text"
+              name="cardname"
+              placeholder="Miss Shreya Khaire"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <span>Credit Card Number:</span>
+            <input
+              type="text"
+              name="cardnumber"
+              placeholder="0000 0000 0000 0000"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <span>Exp. Month:</span>
+            <input type="text" name="expmonth" placeholder="August" required />
+          </div>
+          <div class="flex">
+            <div class="input-box">
+              <span>Exp. Year:</span>
+              <input type="text" name="expyear" placeholder="2025" required />
+            </div>
+            <div class="input-box">
+              <span>CVV:</span>
+              <input type="text" name="cvv" placeholder="123" required />
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn">Proceed to Payment</button>
+      </form>
+    </div>
+  </body>
+</html>
